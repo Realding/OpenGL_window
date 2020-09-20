@@ -5,6 +5,8 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <glm/glm.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 using namespace std;
 
@@ -24,6 +26,7 @@ public:
 
 	void setVect3f(const std::string& name, float x, float y, float z) const;
 
+	void setMat4(const std::string& name, glm::mat4 value);
 
 private:
 	void checkCompileErrors(unsigned int shader, string type);
